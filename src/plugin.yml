@@ -1,0 +1,5 @@
+name: FFA-Core
+version: 1.0
+description: An FFA core made by PlayerStats.
+main: net.ffa.playerstats.FFAPlugin
+authors: [PlayerStats]
