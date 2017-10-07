@@ -8,11 +8,11 @@ public class LocationUtil {
 	public static String locationToString(Location location) {
 		
 		String toReturn =
-			location.getWorld().getName() +"-"+
-			location.getBlockX()+"-"+
-			location.getBlockY()+"-"+
-			location.getBlockZ()+"-"+
-			location.getYaw()+"-"+
+			location.getWorld().getName() +"@"+
+			location.getBlockX()+"@"+
+			location.getBlockY()+"@"+
+			location.getBlockZ()+"@"+
+			location.getYaw()+"@"+
 			location.getPitch();
 		return toReturn;
 		
@@ -20,7 +20,7 @@ public class LocationUtil {
 	}
 	
 	public static Location locationFromString(String s) {
-		String[] arr = s.split("-");
+		String[] arr = s.split("@");
 		String world = arr[0];
 		int x = Integer.parseInt(arr[1]);
 		int y = Integer.parseInt(arr[2]);
