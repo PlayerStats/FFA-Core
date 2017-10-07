@@ -21,7 +21,7 @@ public class FFAListeners implements Listener {
 	
 	}
 	
-	@EventHandler
+	/*@EventHandler
 	public void death(PlayerDeathEvent e) {
 		e.getDrops().clear();
 		EntityDamageEvent damage = e.getEntity().getLastDamageCause();
@@ -30,7 +30,7 @@ public class FFAListeners implements Listener {
 			e.getEntity().sendMessage(ChatColor.DARK_GRAY + "You were killed by: " + ChatColor.RED + e.getEntity().getKiller().getName());
 			break;
 		}
-	}
+	}*/
 	
 	@EventHandler
 	public void respawn(PlayerRespawnEvent e) {
